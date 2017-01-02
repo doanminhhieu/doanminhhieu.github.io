@@ -1,0 +1,78 @@
+#wrapper{
+    background: #FFFFFF;
+    font-family: Georgia ,"Times New Roman",times, Serif ;
+    border: solid 1px #dfdfdf;
+    width: 500px;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+.clear{
+    clear: both;
+}
+.title{
+    font-size: 24px;
+    font-weight:bold;
+}
+.title-profile{
+    height:25px;
+    background: url("../image/background_title.gif") repeat-x left top;
+}
+#profile{
+    margin-bottom: 20px;
+}
+.content-profile{
+    height: 100px;
+}
+.avatar{
+    width: 90px;
+    height: 100px;
+    padding-left: 10px;
+    float: left;
+}
+.information{
+    width: 390px;
+    overflow: scroll;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+}
+#facts{
+    margin-bottom: 20px;
+}
+.list-event{
+    list-style: none;
+}
+.list-event li{
+    background: url("../image/imgage-star.png") no-repeat left center;
+    padding-left: 35px;
+    margin-top: 15px;
+}
+.content-comment{
+    background: #ECECEC;
+    height: 45px;
+    position:relative;
+    margin-top:20px;
+    padding-left: 10px;
+}
+.triangle{
+    position: absolute;
+    background: url("../image/triangle.png") no-repeat left center;
+    display: block;
+    top: 36px;
+    left: 23px;
+    width: 50px;
+    height: 30px;
+
+}
+.time-post{
+    padding-left: 20%;
+}
+
+.title-yourcomment{
+    text-align: center;
+}
+.form-comment span{
+    margin-right: 20px;
+    width: 10px;
+}
