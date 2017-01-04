@@ -1,22 +1,23 @@
+
 #wrapper{
     background: #FFFFFF;
     font-family: Georgia ,"Times New Roman",times, Serif ;
     border: solid 1px #dfdfdf;
     width: 500px;
     margin: 0 auto;
-    padding: 5px;
 
 }
 .clear{
     clear: both;
 }
 .title{
-    font-size: 24px;
+    font-size: 20px;
     font-weight:bold;
 }
 .title-profile{
     height:25px;
     background: url("../image/background_title.gif") repeat-x left top;
+	font-size: 20px;
 }
 #profile{
     margin-bottom: 20px;
@@ -46,7 +47,8 @@
 .list-event li{
     background: url("../image/imgage-star.png") no-repeat left center;
     padding-left: 35px;
-    margin-top: 15px;
+    margin-top: 0px;
+	min-height: 22px;
 }
 .content-comment{
     background: #ECECEC;
@@ -66,7 +68,7 @@
 
 }
 .time-post{
-    padding-left: 20%;
+   padding-left: 12%;
 }
 
 .title-yourcomment{
