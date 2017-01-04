@@ -1,9 +1,143 @@
 #wrapper{
     background-color:#595959;
     font-family: Arial,helvatica,sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     background: #e6f3fb;
     padding: 10px;
-    width: 900px;
+    width: 500px;
     margin: 0 auto;
+}
+h1,h2,h3,h4,h5,ul,p{
+    margin: 0px;
+    padding:0px;
+}
+.title{
+    font-size: 16px;
+    color:#17191f;
+    font-weight: bold;
+    display: block;
+    border-bottom:5px solid #f3a328;
+}
+.title-post{
+    color:#88bbce;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration:none;
+    margin-top: 10px;
+
+}
+.img-post{
+    float: left;
+    padding:10px;
+}
+.title-i{
+    font-size: 16px;
+    font-weight: 100;
+}
+.discribe{
+    float: left;
+    width: 170px;
+    padding-top: 10px;
+}
+.clear{
+    clear: both;
+}
+.image-lt1{
+    width: 260px;
+    border: solid 2px #cfd8d9;
+}
+.item{
+    margin-bottom: 10px;
+}
+.item-blogroll{
+    background: #FFF;
+}
+.list ul li{
+    list-style: none;
+    padding: 10px 0px 10px 10px;
+    background: #fbf1c0;
+    border-bottom: solid #eef5f3 2px;
+    color:#88bbce;
+}
+.list ul li a{
+    color:#88bbce;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration:none;
+    margin-top: 10px;
+
+}
+.title-post2{
+
+    color:#17191f;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration:none;
+    margin-top: 10px;
+}
+.image-lt3{
+    width: 150px;
+    height: auto;
+}
+.title-time{
+    color: #808080;
+    margin-bottom: 20px;
+}
+.discribe2{
+    width: 490px;
+    padding-top: 30px;
+}
+.banner-intro{
+    height: 70px;
+    background: #f4f4ec;
+}
+.text-intro{
+    float: left;
+    margin-left: 10%;
+    padding-top: 20px;
+    width: 300px;
+}
+.image-banner-intro{
+    float: right;
+}
+.image-banner-intro img{
+    height: 70px;
+}
+.read-all{
+    font-size: 18px;
+    font-weight: bold;
+    color: #5cafb5;
+    text-decoration: none;
+}
+.banner-intro2{
+    background:#FFFFFF;
+    margin-bottom: 10px;
+
+}
+
+.image-banner-intro2{
+    float: left;
+}
+.image-banner-intro2 img{
+    width: 150px;
+}
+.title2{
+    border:  none;
+}
+.list-link-infomation{
+    padding: 10px 10px 10px 20px;
+}
+.list-link-infomation li{
+    list-style: none;
+    margin: 3px;
+}
+.list-link-infomation li a{
+    text-decoration: none;
+    color: #5CAFB5;
+    font-size: 16px;
+
+}
+.custom{
+    padding-top: 10px;
+    border-top: 1px solid #9F8380;
 }
