@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calendar</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+
+</head>
+<body onload="onLoad()" >
+
+<div id="wrapper" >
+    <div class="calender">
+    <input class="text-calendar" type="text" id="txt_username" required onclick="showdate()" />
+    <img src="images/calendar-icon.png">
+    </div>
+    <div id="box-calendar" class="box-calendar">
+       <table id="table">
+           <tr>
+               <th><input type="button" value="&larr;&larr;" id="prev-year" onclick="prevYear()"></th>
+               <th><input type="button" value="&larr;" id="prev-month"  onclick="prevMonth()" ></th>
+
+               <th colspan="2">
+                   <select style="width: 108px;" id="year-select" onchange="changeBoxMonth()">
+                       <option value="0"> January</option>
+                       <option value="1"> February</option>
+                       <option value="2"> March</option>
+                       <option value="3"> April</option>
+                       <option value="4"> May</option>
+                       <option value="5"> June</option>
+                       <option value="6"> July</option>
+                       <option value="7"> August</option>
+                       <option value="8"> September</option>
+                       <option value="9"> October</option>
+                       <option value="10"> November</option>
+                       <option value="11"> December</option>
+
+                   </select>
+               </th>
+               <th>
+                   <select id="year" onchange="changeBoxYear()">
+                  </select>
+               </th>
+               <th><input id="next-month" type="button" value="&rarr;" onclick="nextMonth()"></th>
+               <th><input id="next-year" type="button" value="&rarr;&rarr;" onclick="nextYear()"></th>
+
+           </tr>
+           <tr class="title">
+               <td>Sun</td>
+               <td>Mon</td>
+               <td>Tue</td>
+               <td>Web</td>
+               <td>Thu</td>
+               <td>Tri</td>
+               <td>Sat</td>
+           </tr>
+
+           <table id="change">
+
+           </table>
+
+
+
+       </table>
+
+    </div>
+
+
+</div>
+
+<script type="text/javascript" src="js/jscalendar.js"></script>
+</body>
+</html>

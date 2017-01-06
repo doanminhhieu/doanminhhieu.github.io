@@ -1,0 +1,56 @@
+#wrapper{
+    width: 500px;
+    height: 500px;
+    background: #43a2ba;
+    margin: 0 auto;
+    text-align: center;
+}
+.form-register{
+    padding: 30px;
+}
+.text-calendar{
+    margin-top:50px;
+    height: 20px;
+}
+.calender{
+    position: relative;
+}
+.calender img{
+    position: absolute;
+    width:20px;
+    height:20px;
+    top: 53px;
+    right: 166px;
+}
+.box-calendar{
+
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 5px;
+    display: none;
+
+}
+table{
+
+}
+table tr td{
+
+    border: solid 2px #BEBEA3;
+    width: 50px;
+}
+table tr td input{
+
+    width: 55px;
+}
+table tr th{
+    border: solid 2px #BEBEA3;
+    height: 20px;
+    color: #FFFFFF;
+}
+table tr th input{
+    width: 58px;
+}
+.title td {
+    background: red;
+    color: #FFFFFF;
+}

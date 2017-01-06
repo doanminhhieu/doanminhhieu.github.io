@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slider</title>
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body >
+
+    <div id="wrap-slider" >
+
+        <div id="slider">
+            <img id="image-active"  alt="image1" src="images/image1.jpg">
+        </div>
+        <span id="prev-slider" onclick="prev_Image()"> <img alt="image1" src="images/Previous.png"></span>
+        <span id="next-slider" onclick="next_Image()"> <img  alt="image1" src="images/Next-icon.png"></span>
+        <div id="list-image">
+            <ul>
+                <li> <img name="image-slider" alt="image1" src="images/image1.jpg"> </li>
+                <li> <img name="image-slider" alt="image1" src="images/image2.jpg"> </li>
+                <li> <img name="image-slider" alt="image1" src="images/image3.jpg"> </li>
+                <li> <img  name="image-slider" alt="image1" src="images/image4.jpg"> </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jsSlider.js"></script>
+</body>
+</html>
