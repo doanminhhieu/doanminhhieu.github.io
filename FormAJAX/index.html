@@ -4,37 +4,108 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Slider</title>
+    <title>Calendar</title>
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
 
 </head>
-<body >
+<body onload="onLoad()" >
 
 <div id="wrapper" >
-    <form class="form-register">
-        <table class="table-register">
-            <tr>
-                <td>Usser name</td>
-                <td><input type="text" name="txt_username" required></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td><input type="text" name="txtpassword" required></td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td><input type="EMAIL" name="txt_email" required></td>
-            </tr>
-            <tr>
-                <td>Birthday</td>
-                <td><input type="date" name="txt_birthday" required></td>
-            </tr>
-        </table>
-        <input type="submit" value="Submit"><input value="refresh" type="reset">
-    </form>
+    <div class="calender">
+        <form class="formAjax" action="action.php" onsubmit="return validate()">
+            <table class="tableAjax">
+                <tr>
+                    <td  colspan="2" id="resultCheckName" style="color: pink"></td>
+                </tr>
+                <tr>
+                    <td class="name"> UsserName:</td>
+                    <td><input class="text-input" type="text" name="name" id="name" onchange="validateName()" required></td>
+                    <td style="color: red;width: 250px;" id="error_name"></td>
+                </tr>
+                <tr>
+                    <td class="name">Password:</td>
+                    <td><input class="text-input" type="password" name="pass" id="pass" onchange="validatePassword()" required></td>
+                    <td style="color: red; width: 250px;" id="error_pass"></td>
+                </tr>
+                <tr>
+                    <td class="name">Email:</td>
+                    <td><input class="text-input" type="email" name="email" id="email" onchange="validateEmail()" required></td>
+                    <td style="color: red; width: 250px;" id="error_email"></td>
+                </tr>
+                <tr>
+                    <td class="name"> Birthday:</td>
+                    <td><input class="text-calendar" type="text" name="txt_username" id="txt_username"  required onclick="showdate()" onchange="validateBirthday()" /></td>
+                    <td style="color: red; width: 250px;" id="error_calendar"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="btn-sm">
+                        <input style="margin-left: 80px; margin-top: 20px" type="submit" value="SUBMIT" onclick="return validate();">
+                        <input type="reset" value="REFRESH">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+    </div>
+
+    <div id="box-calendar" class="box-calendar">
+       <table id="table">
+           <tr>
+               <th><input type="button" value="&larr;&larr;" id="prev-year" onclick="prevYear()"></th>
+               <th><input type="button" value="&larr;" id="prev-month"  onclick="prevMonth()" ></th>
+
+               <th colspan="2">
+                   <select style="width: 108px;" id="year-select" onchange="changeBoxMonth()">
+                       <option value="0"> January</option>
+                       <option value="1"> February</option>
+                       <option value="2"> March</option>
+                       <option value="3"> April</option>
+                       <option value="4"> May</option>
+                       <option value="5"> June</option>
+                       <option value="6"> July</option>
+                       <option value="7"> August</option>
+                       <option value="8"> September</option>
+                       <option value="9"> October</option>
+                       <option value="10"> November</option>
+                       <option value="11"> December</option>
+
+                   </select>
+               </th>
+               <th>
+                   <select id="year" onchange="changeBoxYear()">
+                  </select>
+               </th>
+               <th><input id="next-month" type="button" value="&rarr;" onclick="nextMonth()"></th>
+               <th><input id="next-year" type="button" value="&rarr;&rarr;" onclick="nextYear()"></th>
+
+           </tr>
+           <tr class="title">
+               <td>Sun</td>
+               <td>Mon</td>
+               <td>Tue</td>
+               <td>Web</td>
+               <td>Thu</td>
+               <td>Tri</td>
+               <td>Sat</td>
+           </tr>
+
+           <table id="change">
+
+           </table>
+
+
+
+       </table>
+
+    </div>
 
 </div>
 
-<script type="text/javascript" src="js/jsAjax.js"></script>
+<script type="text/javascript" src="js/jscalendar.js"></script>
+<script type="text/javascript" src="js/valiateForm.js"></script>
+<script type="text/javascript" src="js/processAjax.js"></script>
 </body>
 </html>

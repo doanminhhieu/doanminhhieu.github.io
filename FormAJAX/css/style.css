@@ -1,9 +1,86 @@
 #wrapper{
-    width: 500px;
+    width: 600px;
+    height: 200px;
     background: #43a2ba;
     margin: 0 auto;
-
+    text-align: center;
 }
 .form-register{
     padding: 30px;
+}
+.text-calendar{
+
+    height: 20px;
+    background: url("../images/calendar-icon.png") no-repeat right center, #FFFFFF;
+
+}
+.calender{
+    position: relative;
+}
+.calender img{
+    position: absolute;
+    width:20px;
+    height:20px;
+    top: 53px;
+    right: 166px;
+}
+.box-calendar{
+
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 5px;
+    display: none;
+
+}
+table{
+
+}
+table tr td{
+
+    border: solid 2px #BEBEA3;
+    width: 50px;
+}
+table tr td input{
+
+    width: 55px;
+}
+table tr th{
+    border: solid 2px #BEBEA3;
+    height: 20px;
+    color: #FFFFFF;
+}
+table tr th input{
+    width: 58px;
+}
+.title td {
+    background: red;
+    color: #FFFFFF;
+}
+
+.formAjax{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.formAjax td{
+    border: none;
+}
+.formAjax td input{
+    width: 200px;
+}
+.formAjax .name{
+    width: 75px;
+}
+.btn-sm{
+
+}
+.formAjax .btn-sm input{
+    width: 81px;
+    margin-right: 5px;
+    padding: 5px;
+    border: navajowhite;
+    margin-left: 18px;
+    border-radius: 5px;
+}
+.success{
+    color: blue;
 }
