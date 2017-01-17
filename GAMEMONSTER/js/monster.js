@@ -27,6 +27,7 @@
         document.getElementById("speed").innerHTML = speed_monster;
         _context = _canvas.getContext("2d");
         _canvas.addEventListener("click", function (e) {
+			if(pause){
             var k = MonstersLife();
             for(var i = 0 ; i < list_monster.length ;i++) {
                 list_monster[i].checkLife(e.offsetX, e.offsetY);
@@ -48,6 +49,7 @@
 
 
             }
+			}
 
         });
 
