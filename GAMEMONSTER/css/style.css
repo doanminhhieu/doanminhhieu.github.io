@@ -1,0 +1,80 @@
+.game-monster{
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid #2C2C2C;
+    padding: 0px;
+
+}
+
+.result{
+    height: 110px;
+    background-color: #2C2C2C;
+    color: aqua;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#canvasMonster{
+    margin: 0 auto;
+    background:url(../images/background-monster.jpg) repeat-x top center ;
+}
+.left{
+    float: left;
+    padding: 10px;
+}
+.left ul li{
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.left ul li img{
+    width: 20px;
+}
+.right{
+    float: right;
+}
+.right ul{
+    padding-top: 13px;
+}
+.right ul li{
+    float: left;
+    margin:0px 5px 0px 5px;
+}
+.right ul li input {
+
+    background-color: #2C2C2C;
+    width: 51px;
+    height: 41px;
+    margin-right: 10px;
+
+
+}
+.right ul li button{
+    position: relative;
+}
+.right ul li button img{
+    width: 43px;
+    height: 37px;
+}
+.clear{
+    clear: both;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+ul li{
+    list-style: none;
+}
+.title-right{
+
+    padding-top: 0px;
+    padding-right: 50px;
+    margin-top: 4px;
+}
+.text{
+    color: orange;
+    position: absolute;
+    top: -30px;
+    font-size: 34px;
+    left: 17px
+}

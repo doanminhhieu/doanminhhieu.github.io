@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link href="css/style.css" rel="stylesheet">
+
+<body>
+
+<div class="game-monster">
+    <div class="result">
+        <div class="left">
+            <ul>
+                <li> Score:<span id="score" style="color:orange; font-size: 18px"></span></li>
+                <li> heart:<i id = "heart"></i></li>
+                <li> speed:<i id = "speed" span style="color:orange; font-size: 18px">1</i></li>
+            </ul>
+            <div class="clear"></div>
+
+        </div>
+        <div class="right">
+            <h3 class="title-right"> Random Mmonster 1</h3>
+            <ul>
+                <li><button  onclick="removeAllMonsters()" class="btn"><img src="images/bomb.png"><span id ="buzm" class="text"></span></button></li>
+                <li><button class="btn"   onclick="pauseMonsters()" ><img src="images/stop.png"><span id = "stop" class="text"></span></button></li>
+                <li><button  onclick="RunMonsters()" id="pause" class="btn"><img   src="images/pause.png"></button></li>
+                <li><button onclick="refreshMonsters()" class="btn"><img src="images/refresh.png"></button></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+
+    </div>
+    <canvas id="canvasMonster"  width="600px" height="540px"; >
+        Trình duyệt của bạn không hỗ trợ thẻ canvas trong HTML5.
+    </canvas>
+</div>
+
+<script src="js/monster.js"></script>
+
+
+
+</body>
+</html>
+
+
